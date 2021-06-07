@@ -17,31 +17,6 @@ limitations under the License.
 
 This folder contains actively maintained examples of use of 🤗 Transformers using the PyTorch backend, organized along NLP tasks.
 
-## The Big Table of Tasks
-
-Here is the list of all our examples:
-- with information on whether they are **built on top of `Trainer``** (if not, they still work, they might
-  just lack some features),
-- whether or not they have a version using the [🤗 Accelerate](https://github.com/huggingface/accelerate) library.
-- whether or not they leverage the [🤗 Datasets](https://github.com/huggingface/datasets) library.
-- links to **Colab notebooks** to walk through the scripts and run them easily,
-<!--
-Coming soon!
-- links to **Cloud deployments** to be able to deploy large-scale trainings in the Cloud with little to no setup.
--->
-
-| Task | Example datasets | Trainer support | 🤗 Accelerate | 🤗 Datasets | Colab
-|---|---|:---:|:---:|:---:|:---:|
-| [**`language-modeling`**](https://github.com/huggingface/transformers/tree/master/examples/pytorch/language-modeling) | WikiText-2 | ✅ | ✅ | ✅ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/language_modeling.ipynb)
-| [**`multiple-choice`**](https://github.com/huggingface/transformers/tree/master/examples/pytorch/multiple-choice) | SWAG | ✅ | ✅ | ✅ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/multiple_choice.ipynb)
-| [**`question-answering`**](https://github.com/huggingface/transformers/tree/master/examples/pytorch/question-answering) | SQuAD | ✅ | ✅ | ✅ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/question_answering.ipynb)
-| [**`summarization`**](https://github.com/huggingface/transformers/tree/master/examples/pytorch/summarization) |  XSum | ✅ | ✅ | ✅ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/summarization.ipynb)
-| [**`text-classification`**](https://github.com/huggingface/transformers/tree/master/examples/pytorch/text-classification) | GLUE | ✅ | ✅ | ✅ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/text_classification.ipynb)
-| [**`text-generation`**](https://github.com/huggingface/transformers/tree/master/examples/pytorch/text-generation) | - | n/a | - | - | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/blog/blob/master/notebooks/02_how_to_generate.ipynb)
-| [**`token-classification`**](https://github.com/huggingface/transformers/tree/master/examples/pytorch/token-classification) | CoNLL NER | ✅ |✅ | ✅ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/token_classification.ipynb)
-| [**`translation`**](https://github.com/huggingface/transformers/tree/master/examples/pytorch/translation) | WMT | ✅ | ✅ |✅ | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/master/examples/translation.ipynb)
-
-
 ## Running quick tests
 
 Most examples are equipped with a mechanism to truncate the number of dataset samples to the desired length. This is useful for debugging purposes, for example to quickly check that all stages of the programs can complete, before running the same setup on the full dataset which may take hours to complete.
